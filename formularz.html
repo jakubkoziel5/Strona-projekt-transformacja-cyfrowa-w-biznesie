@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title> Formularz Wstępny</title>
+<style>
+#main-wrap > div {min-height: 450px;}
+	#main {
+	    overflow: hidden;
+	}
+	#pasek_boczny {
+	    float: left;
+	    width: 150px;
+		padding: 20px; 
+		height: 250px;
+		background-color:rgba(255, 255, 255, 0.9);
+		position: fixed;
+		text-align: center;
+		margin-top: 70px;
+		margin-left: -10px;
+		border-radius: 0px 0px 10px 10px;
+	}
+	body {
+		background-image: url('UwU.jpg');
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+}
+	#glownycontent {
+		border-radius: 15px;
+		padding: 20px; 
+		width: 400px;
+		background-color: rgba(255, 255, 255, 0.5); 
+		border-radius: 10px;
+		text-align: center;
+		margin: auto;
+		margin-top: 80px;
+		
+} 
+	#headDIV {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5px;
+		background-color: rgba(255, 255, 255, 0.9);
+		height: 70px;
+		width: 100%;
+		min-height: 40px;
+		position: fixed;
+		margin-top: -10px;
+		margin-left: -10px;
+	} 
+	h3 {
+		font-size: 1.5em;
+		margin-bottom: 50px;
+	}	
+</style>
+</head>
+
+<body>
+<div id="headDIV"> <h1 style="font-family:'Arial'"> Formularz Wstępny </div>
+<div>
+<div id="main">
+    <div id="pasek_boczny">
+	<h3 style="font-family:'Arial'"><a href="Index.html"> Witamy </a></h3>
+	<h3 style="font-family:'Arial'";><a href="p1.html"> Nasze usługi </a></h3>
+	<h3 style="font-family:'Arial'";> Zapisz się już dziś! </h3>
+	</div>
+<div id="glownycontent">
+<form action="mailto:jakis@mail" method="post" enctype="text/plain">
+<h4 style="color:white">
+	<p style="color: black; font-family:verdana;"> Imię </p>
+	<input name="Imię">
+	<p style="color: black; font-family:verdana;"> Nazwisko </p>
+	<input name="Nazwisko">
+	<br>
+	<p style="color: black; font-family:verdana;">Podaj swoją płeć:</p>
+	<input type="radio" id="kobieta" name="Płeć" value="Kobieta">
+	<label for="kobieta" style="color: black; font-family:verdana;"> Kobieta </label><br>
+	<input type="radio" id="mężczyzna"  name="Płeć" value="Mężczyzna">
+	<label for="mężczyzna" style="color: black; font-family:verdana;"> Mężczyzna</label>
+	<p style="color: black; font-family:verdana;">Podaj swój adres E- Mail</p>
+    <input name="mail">
+	<br>
+	<br>
+	<br>
+	<p style="color: black; font-family:verdana;">Czy ty lub któryś z członków twojej rodziny założyło w przeszłości firmę?</p>
+		<select name="Auto">
+		<option selected>Nie</option>
+		<option>Tak</option>
+	</select>
+		<p style="color: black; font-family:verdana;">Jakiego rodzaju będzie twoja firma?</p>
+	<input type="checkbox" id="uslugi" name="uslugi" value="UwU">
+	<label for="uslugi" style="color: black; font-family:verdana;"> Usługi </label><br>
+	<input type="checkbox" id="gastronomia" name="gastronomia" value="om nom nom">
+	<label for="gastronomia" style="color: black; font-family:verdana;"> Gastronomia </label><br>
+	<input type="checkbox" id="inf" name="inf" value="inf">
+	<label for="inf" style="color: black; font-family:verdana;"> Firma Informatyczna </label><br>
+	<input type="checkbox" id="inne" name="Inne" value="Inne">
+	<label for="inne" style="color: black; font-family:verdana;"> Inna (podaj jaka):
+	<input name="firma">
+	<br>
+	<br>
+	<br>
+	<p style="color: black; font-family:verdana;"> W jakiej branży byłeś zatrudniony/na?</p>
+	<select name="System operacyjny" multiple size="3">
+		<option selected>Informatyka</option>
+		<option>Gastronomia</option>
+		<option>Księgowość</option>
+		<option>Inne (podaj w komentarzu) </option>
+		<option> Nie byłem wcześniej zatrudniony </option>
+	</select>
+	<br>
+	<p style="color: black; font-family:verdana;">Komantarz / opis </p>
+	<textarea name="Komentarz" cols="50" rows="3">...</textarea>
+	<br>
+	<br>
+	<br>
+	<input type="submit" value="Wyślij">
+	</form>
+</div>
+</html
